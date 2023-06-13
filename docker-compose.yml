@@ -1,0 +1,28 @@
+version: '3'
+services:
+  mud:
+    hostname: foundry
+    build:
+      dockerfile: Dockerfile
+    platform: linux/amd64
+    image: foundry180523-node18.9.1-mud
+    container_name: mud
+    # build:
+    #   context: .
+    # env_file:
+    #   - .env
+    #network_mode: "host"
+    # extra_hosts:
+    # - "host.docker.internal:host-gateway"
+    ports:
+      - 0.0.0.0:3333:3333
+      # - 8080:8080
+      # - 8888:8888
+      - 127.0.0.1:8545:8545
+    volumes:
+      - ./dungeon:/app
+    command: ["sh"] #export ANVIL_IP_ADDR=0.0.0.0 && pnpm run dev
+    #command: ["sh", "export ANVIL_IP_ADDR=0.0.0.0 && pnpm run dev"]
+    working_dir: /app
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
