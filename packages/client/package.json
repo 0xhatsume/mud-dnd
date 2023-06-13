@@ -22,11 +22,17 @@
     "@latticexyz/std-client": "2.0.0-alpha.1.212+22efa6ed",
     "@latticexyz/utils": "2.0.0-alpha.1.212+22efa6ed",
     "@latticexyz/world": "2.0.0-alpha.1.212+22efa6ed",
+    "@tanstack/query-core": "^4.29.7",
+    "@tanstack/react-query": "^4.29.7",
     "@wagmi/chains": "^0.2.22",
     "contracts": "workspace:*",
     "ethers": "^5.7.2",
+    "jotai": "^2.1.0",
+    "jotai-tanstack-query": "^0.7.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.6",
@@ -34,6 +40,8 @@
     "@vitejs/plugin-react": "^3.1.0",
     "eslint-plugin-react": "7.31.11",
     "eslint-plugin-react-hooks": "4.6.0",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
     "vite": "^4.2.1",
     "wait-port": "^1.0.4"
   }
