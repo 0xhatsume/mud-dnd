@@ -5,6 +5,231 @@ import { defineComponent, Type as RecsType, World } from "@latticexyz/recs";
 
 export function defineContractComponents(world: World) {
   return {
+    ToDo: (() => {
+      const tableId = new TableId("", "ToDo");
+      return defineComponent(
+        world,
+        {
+          done: RecsType.Boolean,
+          body: RecsType.String,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Stories: (() => {
+      const tableId = new TableId("", "Stories");
+      return defineComponent(
+        world,
+        {
+          game_startedby: RecsType.String,
+          name: RecsType.String,
+          dm_system_message: RecsType.String,
+          questspecifics: RecsType.String,
+          user_description: RecsType.String,
+          game_description: RecsType.String,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    StoryArt: (() => {
+      const tableId = new TableId("", "StoryArt");
+      return defineComponent(
+        world,
+        {
+          context: RecsType.String,
+          nft_url: RecsType.String,
+          image_url: RecsType.String,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Narratives: (() => {
+      const tableId = new TableId("", "Narratives");
+      return defineComponent(
+        world,
+        {
+          world: RecsType.String,
+          order: RecsType.BigInt,
+          from: RecsType.String,
+          text: RecsType.String,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Wallet: (() => {
+      const tableId = new TableId("", "Wallet");
+      return defineComponent(
+        world,
+        {
+          balance: RecsType.BigInt,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Player: (() => {
+      const tableId = new TableId("", "Player");
+      return defineComponent(
+        world,
+        {
+          class: RecsType.Number,
+          name: RecsType.String,
+          player_description: RecsType.String,
+          picture_url: RecsType.String,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Health: (() => {
+      const tableId = new TableId("", "Health");
+      return defineComponent(
+        world,
+        {
+          current: RecsType.BigInt,
+          maxHealth: RecsType.BigInt,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Xp: (() => {
+      const tableId = new TableId("", "Xp");
+      return defineComponent(
+        world,
+        {
+          current: RecsType.BigInt,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Strength: (() => {
+      const tableId = new TableId("", "Strength");
+      return defineComponent(
+        world,
+        {
+          value: RecsType.BigInt,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Dexterity: (() => {
+      const tableId = new TableId("", "Dexterity");
+      return defineComponent(
+        world,
+        {
+          value: RecsType.BigInt,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Constitution: (() => {
+      const tableId = new TableId("", "Constitution");
+      return defineComponent(
+        world,
+        {
+          value: RecsType.BigInt,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Intelligence: (() => {
+      const tableId = new TableId("", "Intelligence");
+      return defineComponent(
+        world,
+        {
+          value: RecsType.BigInt,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Wisdom: (() => {
+      const tableId = new TableId("", "Wisdom");
+      return defineComponent(
+        world,
+        {
+          value: RecsType.BigInt,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
+    Charisma: (() => {
+      const tableId = new TableId("", "Charisma");
+      return defineComponent(
+        world,
+        {
+          value: RecsType.BigInt,
+        },
+        {
+          metadata: {
+            contractId: tableId.toHexString(),
+            tableId: tableId.toString(),
+          },
+        }
+      );
+    })(),
     Counter: (() => {
       const tableId = new TableId("", "Counter");
       return defineComponent(
