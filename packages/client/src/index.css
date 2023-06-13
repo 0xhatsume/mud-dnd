@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Proto";
+  src: url("/fonts/ProtoMonoSemiBold.eot");
+  src: url("/fonts/ProtoMonoSemiBold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/ProtoMonoSemiBold.woff2") format("woff2"),
+    url("/fonts/ProtoMonoSemiBold.woff") format("woff"),
+    url("/fonts/ProtoMonoSemiBold.ttf") format("truetype"),
+    url("/fonts/ProtoMonoSemiBold.svg#ProtoMonoSemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proto Shadow";
+  src: url("/fonts/ProtoMonoRegularShadow.eot");
+  src: url("/fonts/ProtoMonoRegularShadow.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/ProtoMonoRegularShadow.woff2") format("woff2"),
+    url("/fonts/ProtoMonoRegularShadow.woff") format("woff"),
+    url("/fonts/ProtoMonoRegularShadow.ttf") format("truetype"),
+    url("/fonts/ProtoMonoRegularShadow.svg#ProtoMonoRegularShadow")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proto Shadow";
+  src: url("/fonts/ProtoMonoMediumShadow.eot");
+  src: url("/fonts/ProtoMonoMediumShadow.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/ProtoMonoMediumShadow.woff2") format("woff2"),
+    url("/fonts/ProtoMonoMediumShadow.woff") format("woff"),
+    url("/fonts/ProtoMonoMediumShadow.ttf") format("truetype"),
+    url("/fonts/ProtoMonoMediumShadow.svg#ProtoMonoMediumShadow") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proto Mono";
+  src: url("/fonts/ProtoMonoMedium.eot");
+  src: url("/fonts/ProtoMonoMedium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/ProtoMonoMedium.woff2") format("woff2"),
+    url("/fonts/ProtoMonoMedium.woff") format("woff"),
+    url("/fonts/ProtoMonoMedium.ttf") format("truetype"),
+    url("/fonts/ProtoMonoMedium.svg#ProtoMonoMedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proto";
+  src: url("/fonts/ProtoMonoRegular.eot");
+  src: url("/fonts/ProtoMonoRegular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/ProtoMonoRegular.woff2") format("woff2"),
+    url("/fonts/ProtoMonoRegular.woff") format("woff"),
+    url("/fonts/ProtoMonoRegular.ttf") format("truetype"),
+    url("/fonts/ProtoMonoRegular.svg#ProtoMonoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proto Shadow";
+  src: url("/fonts/ProtoMonoSemiBoldShadow.eot");
+  src: url("/fonts/ProtoMonoSemiBoldShadow.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/ProtoMonoSemiBoldShadow.woff2") format("woff2"),
+    url("/fonts/ProtoMonoSemiBoldShadow.woff") format("woff"),
+    url("/fonts/ProtoMonoSemiBoldShadow.ttf") format("truetype"),
+    url("/fonts/ProtoMonoSemiBoldShadow.svg#ProtoMonoSemiBoldShadow")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proto";
+  src: url("/fonts/ProtoMonoLight.eot");
+  src: url("/fonts/ProtoMonoLight.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/ProtoMonoLight.woff2") format("woff2"),
+    url("/fonts/ProtoMonoLight.woff") format("woff"),
+    url("/fonts/ProtoMonoLight.ttf") format("truetype"),
+    url("/fonts/ProtoMonoLight.svg#ProtoMonoLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proto Shadow";
+  src: url("/fonts/ProtoMonoLightShadow.eot");
+  src: url("/fonts/ProtoMonoLightShadow.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/ProtoMonoLightShadow.woff2") format("woff2"),
+    url("/fonts/ProtoMonoLightShadow.woff") format("woff"),
+    url("/fonts/ProtoMonoLightShadow.ttf") format("truetype"),
+    url("/fonts/ProtoMonoLightShadow.svg#ProtoMonoLightShadow") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
